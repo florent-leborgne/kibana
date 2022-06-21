@@ -15,6 +15,7 @@ node scripts/es snapshot&
 
 esPid=$!
 
+export ELASTIC_APM_ACTIVE=true
 export TEST_ES_URL=http://elastic:changeme@localhost:9200
 export TEST_ES_DISABLE_STARTUP=true
 
