@@ -67,6 +67,7 @@ export class PerformanceTestingService extends FtrService {
 
   private async withTransaction<T>(name: string, block: () => Promise<T>) {
     try {
+      this.log.info(`is_APM_started_withTransaction=${apm.isStarted()}`);
       if (this.currentTransaction) {
         throw new Error(
           `Transaction already started, make sure you end transaction ${this.currentTransaction?.name}`
@@ -82,6 +83,7 @@ export class PerformanceTestingService extends FtrService {
       this.currentTransaction = undefined;
       return result;
     } catch (e) {
+      this.log.info(`withTransaction_exception_occured`);
       if (this.currentTransaction === undefined) {
         throw new Error(`No transaction started`);
       }
@@ -185,6 +187,7 @@ export class PerformanceTestingService extends FtrService {
 
   private async tearDown(page: Page, client: CDPSession, context: BrowserContext) {
     if (page) {
+      this.log.info(`is_APM_started_tearDown=${apm.isStarted()}`);
       apm.flush();
       await client.detach();
       await page.close();
