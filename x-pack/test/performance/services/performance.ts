@@ -24,6 +24,7 @@ export type Steps = Array<{ name: string; handler: StepFn }>;
 export class PerformanceTestingService extends FtrService {
   private readonly auth = this.ctx.getService('auth');
   private readonly config = this.ctx.getService('config');
+  private readonly log = this.ctx.getService('log');
 
   private browser: ChromiumBrowser | undefined;
   private currentSpanStack: Array<Span | null> = [];
@@ -32,6 +33,15 @@ export class PerformanceTestingService extends FtrService {
   constructor(ctx: FtrProviderContext) {
     super(ctx);
 
+    this.log.info(
+      `ELASTIC_APM_SERVER_URL=${this.config.get(`kbnTestServer.env`).ELASTIC_APM_SERVER_URL}`
+    );
+    this.log.info(
+      `ELASTIC_APM_SECRET_TOKEN=${this.config.get(`kbnTestServer.env`).ELASTIC_APM_SECRET_TOKEN}`
+    );
+    this.log.info(
+      `ELASTIC_APM_GLOBAL_LABELS=${this.config.get(`kbnTestServer.env`).ELASTIC_APM_GLOBAL_LABELS}`
+    );
     ctx.getService('lifecycle').beforeTests.add(() => {
       apm.start({
         serviceName: 'functional test runner',
@@ -39,6 +49,7 @@ export class PerformanceTestingService extends FtrService {
         secretToken: this.config.get(`kbnTestServer.env`).ELASTIC_APM_SECRET_TOKEN,
         globalLabels: this.config.get(`kbnTestServer.env`).ELASTIC_APM_GLOBAL_LABELS,
       });
+      this.log.info(`is_APM_started_beforeTests=${apm.isStarted()}`);
     });
 
     ctx.getService('lifecycle').cleanup.add(async () => {
@@ -61,6 +72,7 @@ export class PerformanceTestingService extends FtrService {
           `Transaction already started, make sure you end transaction ${this.currentTransaction?.name}`
         );
       }
+      this.log.info(`is_APM_started_withTransaction=${apm.isStarted()}`);
       this.currentTransaction = apm.startTransaction(name, 'performance');
       const result = await block();
       if (this.currentTransaction === undefined) {
