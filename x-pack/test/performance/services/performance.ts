@@ -25,6 +25,7 @@ export class PerformanceTestingService extends FtrService {
   private readonly auth = this.ctx.getService('auth');
   private readonly config = this.ctx.getService('config');
   private readonly log = this.ctx.getService('log');
+  private agent: apm.Agent | undefined;
 
   private browser: ChromiumBrowser | undefined;
   private currentSpanStack: Array<Span | null> = [];
@@ -43,13 +44,14 @@ export class PerformanceTestingService extends FtrService {
       `ELASTIC_APM_GLOBAL_LABELS=${this.config.get(`kbnTestServer.env`).ELASTIC_APM_GLOBAL_LABELS}`
     );
     ctx.getService('lifecycle').beforeTests.add(() => {
-      apm.start({
+      this.agent = apm.start({
         serviceName: 'functional test runner',
         serverUrl: this.config.get(`kbnTestServer.env`).ELASTIC_APM_SERVER_URL,
         secretToken: this.config.get(`kbnTestServer.env`).ELASTIC_APM_SECRET_TOKEN,
         globalLabels: this.config.get(`kbnTestServer.env`).ELASTIC_APM_GLOBAL_LABELS,
       });
-      this.log.info(`is_APM_started_beforeTests=${apm.isStarted()}`);
+      this.log.info(`is_APM_started_beforeTests=${this.agent.isStarted()}`);
+      this.log.info(`env vars=${process.env}`);
     });
 
     ctx.getService('lifecycle').cleanup.add(async () => {
@@ -67,14 +69,13 @@ export class PerformanceTestingService extends FtrService {
 
   private async withTransaction<T>(name: string, block: () => Promise<T>) {
     try {
-      this.log.info(`is_APM_started_withTransaction=${apm.isStarted()}`);
+      this.log.info(`is_APM_started_withTransaction=${this.agent?.isStarted()}`);
       if (this.currentTransaction) {
         throw new Error(
           `Transaction already started, make sure you end transaction ${this.currentTransaction?.name}`
         );
       }
-      this.log.info(`is_APM_started_withTransaction=${apm.isStarted()}`);
-      this.currentTransaction = apm.startTransaction(name, 'performance');
+      this.currentTransaction = this.agent?.startTransaction(name, 'performance');
       const result = await block();
       if (this.currentTransaction === undefined) {
         throw new Error(`No transaction started`);
@@ -163,6 +164,8 @@ export class PerformanceTestingService extends FtrService {
     steps: Steps,
     { requireAuth }: { requireAuth: boolean }
   ) {
+    this.log.info(`runUserJourney_function_${journeyName}`);
+    this.log.info(`env vars=${process.env}`);
     return this.withTransaction(`Journey ${journeyName}`, async () => {
       const browser = await this.getBrowserInstance();
       const viewport = { width: 1600, height: 1200 };
