@@ -1,0 +1,15 @@
+[[analyze]]
+== Analyze any data
+
+While solutions are best suited to handle most use cases, you can get powerful **Analytics** on any kind of data thanks to a rich set of tools and components.
+
+=== Shape your data
+Raw data was imported into {es} through some of the multiple link:https://elastic.co[ingest methods] available to you. 
+
+Shaping the data is all about selecting the right set of data to analyze and making it ready for exploration by applying a few transform operations.
+
+=== Explore data
+Gain insights into your data. Query it, visualize it through different approaches, and find out what you can you can get out of it.
+
+=== Build and share dashboards
+Customize your own dashboards with the visualizations and indicators that you care about. Make them available to others and set up alerts to anticipate or react when needed.

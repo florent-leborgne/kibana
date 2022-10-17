@@ -1,15 +1,3 @@
-include::introduction.asciidoc[]
-
-include::whats-new.asciidoc[]
-
-include::{kib-repo-dir}/concepts/index.asciidoc[]
-
-include::{kib-repo-dir}/getting-started/quick-start-guide.asciidoc[]
-
-include::setup.asciidoc[]
-
-include::production-considerations/index.asciidoc[]
-
 include::discover.asciidoc[]
 
 include::dashboard/dashboard.asciidoc[]
