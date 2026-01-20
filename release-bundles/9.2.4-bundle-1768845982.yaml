@@ -1,0 +1,515 @@
+products:
+- product: kibana
+  target: 9.2.4
+entries:
+- file:
+    name: 1768843509-fix-console-state-persisting-across-journey-steps.yaml
+    checksum: f7ffe719e57dd776133dbe841af3db2e0bc90a12
+  type: bug-fix
+  title: Fix console state persisting across journey steps
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247376
+- file:
+    name: 1768843465-cloned-managed-ilm-policies-shouldnt-be-marked-as-.yaml
+    checksum: a8900c5b8a416e54cb59baed173385532d45beea
+  type: bug-fix
+  title: Cloned managed ilm policies shouldn't be marked as managed
+  products:
+  - product: kibana
+    target: 9.2.4
+  pr: 248586
+- file:
+    name: 1768843476-fix-counter-fields-missing-in-anomaly-detection-dr.yaml
+    checksum: 0e206b596fc7fbb0c7a2be7d95013a4252e1e15e
+  type: bug-fix
+  title: Fix counter fields missing in Anomaly detection dropdown
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Machine Learning
+  pr: 248187
+- file:
+    name: 1768843482-update-total-event-in-es-document-when-attaching-a.yaml
+    checksum: dc967c15b20eb32df3b2cf775f6d66c439fd0aa2
+  type: bug-fix
+  title: Update total event in ES document when attaching an event
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Alerting
+  pr: 247996
+- file:
+    name: 1768843568-add-refusal-field-to-assistant-conversations.yaml
+    checksum: 00759b261ba0ec080f525be488d9cf6b4c4b128e
+  type: bug-fix
+  title: Add refusal field to assistant conversations
+  products:
+  - product: kibana
+    target: 9.2.4
+  pr: 243423
+- file:
+    name: 1768843540-replace-`host.hostname`-with-`host.name`-in-infras.yaml
+    checksum: f6623ad83f84a629d7774bf06d80ebf1ccd1dc53
+  type: bug-fix
+  title: Replace `host.hostname` with `host.name` in Infrastructure tab
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 246386
+- file:
+    name: 1768843511-use-exact-match-in-createdby-notes-filter.yaml
+    checksum: b528b5bdba67d4c894da55b6eece24865b34b1ec
+  type: bug-fix
+  title: use exact match in createdBy notes filter
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 247351
+- file:
+    name: 1768843538-[endpoint]-add-server-configuration-setting-for-di.yaml
+    checksum: fdcd6fe996ac4421fbd05de8be3011409ab1fe11
+  type: enhancement
+  title: '[Endpoint] Add server configuration setting for disabling the auto install of endpoint rule on policy create'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246418
+- file:
+    name: 1768843477-fix-timestamp-override-for-es|ql-csv-scheduled-rep.yaml
+    checksum: ec5f9d6ed065bdb276b867f8264113e3db713bac
+  type: bug-fix
+  title: Fix timestamp override for ES|QL CSV scheduled reports with relative time ranges
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Alerting
+  pr: 248169
+- file:
+    name: 1768843495-encode-url-components-for-entities.yaml
+    checksum: 9cc536d92c6f0f3292825bb155bd83f8280f2a71
+  type: bug-fix
+  title: Encode URL Components for entities
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 247707
+- file:
+    name: 1768843560-fix-alert-flyout-threat-intelligence-section-not-s.yaml
+    checksum: 9890fb6860a394feb44f1bd7156a548e3a807223
+  type: bug-fix
+  title: fix alert flyout threat intelligence section not showing multiple values
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 245449
+- file:
+    name: 1768843563-persist-analyzer-dataview-in-local-storage.yaml
+    checksum: 4ddc4bbc8c35364bc203a884fb66d50a40ecdca4
+  type: enhancement
+  title: Persist analyzer dataview in local storage
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 245002
+- file:
+    name: 1768843489-fix-validation-of-maintenance-windows-in-project-m.yaml
+    checksum: af34b37ff07812ec0b866aa04173ba1a60de9ad0
+  type: bug-fix
+  title: Fix validation of maintenance windows in project monitors
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247880
+- file:
+    name: 1768843485-fix-query-drafts-when-switching-tabs.yaml
+    checksum: c48f36863aa48137c50f90ced83cd6782fff7c42
+  type: bug-fix
+  title: Fix query drafts when switching tabs
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Discover
+  pr: 247968
+- file:
+    name: 1768843497-disable-es|ql-field-stats-for-ts-command.yaml
+    checksum: 114f6d1f1081fe6cd73e174ca51309bc2dc0ac41
+  type: bug-fix
+  title: Disable ES|QL field stats for TS command
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Machine Learning
+  pr: 247641
+- file:
+    name: 1768843481-fix-api-doesnt-use-an-associated-conversations-sys.yaml
+    checksum: ad9438b1a90421a04034d878ae3cfd151675fd46
+  type: bug-fix
+  title: "Fix API doesn't use an associated conversation's system prompt "
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 248020
+- file:
+    name: 1768843488-fix-product-documentation-not-available-callout-ic.yaml
+    checksum: cc2d287684a5c1fd1ffeb0fdff85c2fffc3d9282
+  type: bug-fix
+  title: Fix product documentation not available callout icon
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247885
+- file:
+    name: 1768843545-fix-timeline-action-shown-in-alerts-table-bulk-act.yaml
+    checksum: 02cb524cc268ce114d40f0511fa7c9297f355cff
+  type: bug-fix
+  title: Fix timeline action shown in alerts table bulk actions without proper privilege
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246150
+- file:
+    name: 1768843500-[notes]-disable-delete-for-read-only-users-and-imp.yaml
+    checksum: 4053538045a88ba4cc6ae7e03af63215438c4194
+  type: bug-fix
+  title: '[Notes]: disable delete for read-only users and improve error message'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 247617
+- file:
+    name: 1768843467-fix-search-entire-time-range-for-date-nanos.yaml
+    checksum: 56409b9c471e250d6278bde4322dbe9a6f5543aa
+  type: bug-fix
+  title: Fix "Search entire time range" for date nanos
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Discover
+  pr: 248495
+- file:
+    name: 1768843503-fix-related-dashboards-for-es-query-and-other-stac.yaml
+    checksum: 40d5b0ef5d48bb487a7bfc9f37bb19c9f3825118
+  type: bug-fix
+  title: Fix related dashboards for ES Query and other stack rules supported in observability
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247564
+- file:
+    name: 1768843557-[analyzer]-ensure-we-render-analyzer-only-when-the.yaml
+    checksum: e8b4bb09f0e6c0a1ca8148ba1de590fe8753d6a4
+  type: bug-fix
+  title: '[Analyzer] ensure we render analyzer only when the dataView is ready'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 245712
+- file:
+    name: 1768843544-fix-integration-card-in-manage-data-sources-always.yaml
+    checksum: 1461fa9ff6a29f315332062f14887da68b1a79e4
+  type: bug-fix
+  title: Fix Integration card in 'manage data sources' always shows 'no data stream' warning
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246180
+- file:
+    name: 1768843468-fix-only-run-ml-saved-object-check-if-saving-seman.yaml
+    checksum: 63bb409e9187b7a5eb7389a2d9f0518d37306e3b
+  type: bug-fix
+  title: 'Fix: Only run ML saved object check if saving semantic text mapping'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Search
+  pr: 248462
+- file:
+    name: 1768843528-fixing-anomaly-chart-empty-query-bug.yaml
+    checksum: 46b6b189b845717ed48097789ef97c139bac21d8
+  type: bug-fix
+  title: Fixing anomaly chart empty query bug
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Machine Learning
+  pr: 246841
+- file:
+    name: 1768843537-add-max-character-validation-to-the-email-connecto.yaml
+    checksum: 15db401eeede5527962e1708897fa9e866a14dde
+  type: bug-fix
+  title: Add max character validation to the email connector params and config
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Alerting
+  pr: 246453
+- file:
+    name: 1768843532-updates-kibana-mitre-data-to-`v18.1`.yaml
+    checksum: 1e836ff918b94a6952a0386b6530d3320d19e48a
+  type: enhancement
+  title: Updates kibana MITRE data to `v18.1`
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246770
+- file:
+    name: 1768843504-[discover]-fix-trace-links-calculating-date-range-.yaml
+    checksum: d99f370dc065fa2f1337e4eccdc482a4fcacf848
+  type: bug-fix
+  title: '[Discover] Fix trace links calculating date range incorrectly'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247531
+- file:
+    name: 1768843496-improve-anonymization-error-messages-when-ner-mode.yaml
+    checksum: a307c78ba6105776b0b781d79a056ad3465e20d2
+  type: bug-fix
+  title: Improve anonymization error messages when NER model is not available
+  products:
+  - product: kibana
+    target: 9.2.4
+  pr: 247696
+- file:
+    name: 1768843515-use-unicode-escaping-to-prevent-agent-from-interpr.yaml
+    checksum: e6568b004d1d8e24207a1635fbd5ff3a8369150d
+  type: bug-fix
+  title: Use unicode escaping to prevent Agent from interpreting JS template literals as policy variables
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 247284
+- file:
+    name: 1768843483-encode-search-term-in-cases-page.yaml
+    checksum: e14f3726c9db02da0630fdafc15d500dc88d08ae
+  type: bug-fix
+  title: Encode search term in cases page
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Alerting
+  pr: 247992
+- file:
+    name: 1768843460-fix-share-modal-time-range-issues.yaml
+    checksum: 8fac42d9d016af3cd9ddb1162b2f2ec491afb14f
+  type: bug-fix
+  title: Fix share modal time range issues
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Kibana platform
+  pr: 248804
+- file:
+    name: 1768843501-data-visualizer-fixes-display-of-map-view-for-smal.yaml
+    checksum: 9747c13a3ac8de91227f437784b7196cb4b3f031
+  type: bug-fix
+  title: 'Data Visualizer: fixes display of map view for small screen sizes'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Machine Learning
+  pr: 247615
+- file:
+    name: 1768843493-[data-table]-fix-links-color-contrast.yaml
+    checksum: 5282048935dd6bceb0acfb287cc37c351a7cfa7d
+  type: bug-fix
+  title: "[Data Table] Fix link's color contrast"
+  products:
+  - product: kibana
+    target: 9.2.4
+  pr: 247721
+- file:
+    name: 1768843533-fix-default-app-state-handling-when-detecting-unsa.yaml
+    checksum: fea9f8d5e5f1951324af5dfcdd74fd1ef895eea8
+  type: bug-fix
+  title: Fix default app state handling when detecting unsaved changes
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Discover
+  pr: 246664
+- file:
+    name: 1768843556-edit-default-alerts-flow-breaks-if-default-rules-a.yaml
+    checksum: 8591cb86f41423db2ba4f2e307c2cbf58f75e7d2
+  type: bug-fix
+  title: Edit default alerts flow breaks if default rules are not defined
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 245736
+- file:
+    name: 1768843548-only-update-relevant-monitors-where-maintenance-wi.yaml
+    checksum: 203d1555252d3c2ef5bec79095d9200569844f55
+  type: bug-fix
+  title: Only update relevant monitors where maintenance windows exists
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 246088
+- file:
+    name: 1768843552-fix-case-sensitivity-of-fields-in-role-page.yaml
+    checksum: d54fb7683c0c0b76ebe70fdedb471bf84922cb22
+  type: bug-fix
+  title: Fix case sensitivity of fields in role page
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Kibana security
+  pr: 246069
+- file:
+    name: 1768843571-improved-error-handling-for-tool-response.yaml
+    checksum: 1a95c879c49733e457446d14ceda12f92cc3e7d8
+  type: bug-fix
+  title: Improved error handling for tool response
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 241425
+- file:
+    name: 1768843530-fix-mitre-coverage-overview-page-filter-display-bu.yaml
+    checksum: 550114ab4271f49faf9b53ecefbf77fd5837cc78
+  type: bug-fix
+  title: Fix MITRE coverage overview page filter display bug
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246794
+- file:
+    name: 1768843486-change-alert-suppression-icon.yaml
+    checksum: 7c937e75b253a893df7b7740184c64a5701e3ccb
+  type: bug-fix
+  title: Change alert suppression icon
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 247964
+- file:
+    name: 1768843519-fix-createauditevents-always-returning-failure-as-.yaml
+    checksum: 1a63dfba82600c5501faeeeaa59a9f141561ffd1
+  type: bug-fix
+  title: Fix createAuditEvents always returning failure as outcome
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Kibana platform
+  pr: 247152
+- file:
+    name: 1768843463-fix-the-missing-service-environment-in-the-custom-.yaml
+    checksum: ef89c44ad43e7faf80e92513b56b1775e9d089ad
+  type: bug-fix
+  title: Fix the missing service environment in the custom links
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Observability solution
+  pr: 248631
+- file:
+    name: 1768843549-[analyzer]-use-same-dataview-in-analyzer-preview-a.yaml
+    checksum: ca0b363b4c431914a72697155741643370a7d17c
+  type: bug-fix
+  title: '[Analyzer] use same dataview in analyzer preview as was selected in analyzer component'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 246081
+- file:
+    name: 1768843512-fix-compound-filters-showing-unsaved-changes-on-da.yaml
+    checksum: 1e0b067e7c8fb3cca60ca7890cc1dd02c40bac18
+  type: bug-fix
+  title: Fix compound filters showing unsaved changes on dashboard load
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Dashboards and Visualizations
+  pr: 247309
+- file:
+    name: 1768843521-[entity-analytics][risk-scoring]-handle-special-ch.yaml
+    checksum: 7cd5615ba6423cd8054645a8cda5d734d7514d83
+  type: bug-fix
+  title: '[Entity Analytics][Risk Scoring] Handle special characters in ESQL query for risk scoring'
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Elastic Security solution
+  pr: 247060
+- file:
+    name: 1768843565-intersect-allowed-and-authorized-types.yaml
+    checksum: 21f2c2bbdf1b2198194601266d409dff103e75e0
+  type: bug-fix
+  title: Intersect allowed and authorized types
+  products:
+  - product: kibana
+    target: 9.2.4
+  areas:
+  - Kibana platform
+  - Kibana security
+  - Discover
+  pr: 244967

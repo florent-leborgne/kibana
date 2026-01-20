@@ -1,0 +1,475 @@
+products:
+- product: kibana
+  target: 9.2.4
+  lifecycle: ga
+entries:
+- file:
+    name: 1768823338-fix-case-sensitivity-of-fields-in-role-page.yaml
+    checksum: cc2560b057d9ce698177ac34dd858d3ee91fcc2a
+  type: bug-fix
+  title: Fix case sensitivity of fields in role page
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246069
+- file:
+    name: 1768823287-disable-es|ql-field-stats-for-ts-command.yaml
+    checksum: a1ad881076b1ec40da73f14a93a7d162389aba35
+  type: bug-fix
+  title: Disable ES|QL field stats for TS command
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247641
+- file:
+    name: 1768823348-persist-analyzer-dataview-in-local-storage.yaml
+    checksum: 21192197d19e18f88f4265c25461481664cdf8f0
+  type: enhancement
+  title: Persist analyzer dataview in local storage
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 245002
+- file:
+    name: 1768823278-change-alert-suppression-icon.yaml
+    checksum: 619df28b213d45b6830cb7ebc9b322aac929055e
+  type: bug-fix
+  title: Change alert suppression icon
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247964
+- file:
+    name: 1768823274-fix-api-doesnt-use-an-associated-conversations-sys.yaml
+    checksum: 78585eab74c11681902f0325e3cbd37beb5584c1
+  type: bug-fix
+  title: "Fix API doesn't use an associated conversation's system prompt "
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248020
+- file:
+    name: 1768823281-fix-validation-of-maintenance-windows-in-project-m.yaml
+    checksum: 09c57d10c5f6dd4a7a861232a6817e8943f82d72
+  type: bug-fix
+  title: Fix validation of maintenance windows in project monitors
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247880
+- file:
+    name: 1768823356-improved-error-handling-for-tool-response.yaml
+    checksum: cb9cd95680fdd3c323ced4dc44404d6b1b90dc06
+  type: bug-fix
+  title: Improved error handling for tool response
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 241425
+- file:
+    name: 1768823345-fix-alert-flyout-threat-intelligence-section-not-s.yaml
+    checksum: 7a680ee9d5f641a98d3499e9c2c48e754e2d5115
+  type: bug-fix
+  title: fix alert flyout threat intelligence section not showing multiple values
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 245449
+- file:
+    name: 1768823311-[entity-analytics][risk-scoring]-handle-special-ch.yaml
+    checksum: 12f8cc52e911e19a5b0cf3b018f106afd9fbcc4f
+  type: bug-fix
+  title: '[Entity Analytics][Risk Scoring] Handle special characters in ESQL query for risk scoring'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247060
+- file:
+    name: 1768823300-use-exact-match-in-createdby-notes-filter.yaml
+    checksum: af586a89fdf471f0890f51de9d403d425625b137
+  type: bug-fix
+  title: use exact match in createdBy notes filter
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247351
+- file:
+    name: 1768823304-use-unicode-escaping-to-prevent-agent-from-interpr.yaml
+    checksum: 07e35ff4bf7b4be6bb73b204f765537cfa18dc7f
+  type: bug-fix
+  title: Use unicode escaping to prevent Agent from interpreting JS template literals as policy variables
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247284
+- file:
+    name: 1768823320-fix-default-app-state-handling-when-detecting-unsa.yaml
+    checksum: d2f9a0bf25c1bce6ad7f7eb88c898f7335a19ffb
+  type: bug-fix
+  title: Fix default app state handling when detecting unsaved changes
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246664
+- file:
+    name: 1768823292-fix-related-dashboards-for-es-query-and-other-stac.yaml
+    checksum: 344fd4698a44fb3a8ae7e140b01dd87f2c3220cd
+  type: bug-fix
+  title: Fix related dashboards for ES Query and other stack rules supported in observability
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247564
+- file:
+    name: 1768823275-update-total-event-in-es-document-when-attaching-a.yaml
+    checksum: 1c37b223a5c6bae89a0262d1cc8f611675fddb55
+  type: bug-fix
+  title: Update total event in ES document when attaching an event
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247996
+- file:
+    name: 1768823269-fix-timestamp-override-for-es|ql-csv-scheduled-rep.yaml
+    checksum: fa84b7e7c77a20240935bad6b61ff5f4af72a434
+  type: bug-fix
+  title: Fix timestamp override for ES|QL CSV scheduled reports with relative time ranges
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248169
+- file:
+    name: 1768823326-[endpoint]-add-server-configuration-setting-for-di.yaml
+    checksum: c8cd314ca87d0caa79126b3dc6e4480883ec98ee
+  type: enhancement
+  title: '[Endpoint] Add server configuration setting for disabling the auto install of endpoint rule on policy create'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246418
+- file:
+    name: 1768823341-edit-default-alerts-flow-breaks-if-default-rules-a.yaml
+    checksum: 80b352d752ec455004a11d8e895b3b8c75eefdf4
+  type: bug-fix
+  title: Edit default alerts flow breaks if default rules are not defined
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 245736
+- file:
+    name: 1768823268-fix-counter-fields-missing-in-anomaly-detection-dr.yaml
+    checksum: 1d7190bd735a9e7b05688c1dd1de58d43a247e36
+  type: bug-fix
+  title: Fix counter fields missing in Anomaly detection dropdown
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248187
+- file:
+    name: 1768823259-fix-search-entire-time-range-for-date-nanos.yaml
+    checksum: 58732db6753644328045ac6159276ee99f02758f
+  type: bug-fix
+  title: Fix "Search entire time range" for date nanos
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248495
+- file:
+    name: 1768823280-fix-product-documentation-not-available-callout-ic.yaml
+    checksum: 91fa50d8b35df0c1cf99e830facfdbba62cc558e
+  type: bug-fix
+  title: Fix product documentation not available callout icon
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247885
+- file:
+    name: 1768823308-fix-createauditevents-always-returning-failure-as-.yaml
+    checksum: 35f3341793d613d53458d185c6c17014690e811a
+  type: bug-fix
+  title: Fix createAuditEvents always returning failure as outcome
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247152
+- file:
+    name: 1768823289-[notes]-disable-delete-for-read-only-users-and-imp.yaml
+    checksum: bcf6b1964980f70b3584f912b11729643cc5c630
+  type: bug-fix
+  title: '[Notes]: disable delete for read-only users and improve error message'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247617
+- file:
+    name: 1768823293-[discover]-fix-trace-links-calculating-date-range-.yaml
+    checksum: ec5201589ba27c48d0fba8a1182b025441ea34bd
+  type: bug-fix
+  title: '[Discover] Fix trace links calculating date range incorrectly'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247531
+- file:
+    name: 1768823325-add-max-character-validation-to-the-email-connecto.yaml
+    checksum: 41eeb47a29fd6f7c34a5978f1d866c342d7e170e
+  type: bug-fix
+  title: Add max character validation to the email connector params and config
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246453
+- file:
+    name: 1768823298-fix-console-state-persisting-across-journey-steps.yaml
+    checksum: 5078cf0e2e379bba5909a60d324f2463b8cabca3
+  type: bug-fix
+  title: Fix console state persisting across journey steps
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247376
+- file:
+    name: 1768823256-fix-the-missing-service-environment-in-the-custom-.yaml
+    checksum: dfd7b4e2d06f840f2c9ba832ef7585132f604901
+  type: bug-fix
+  title: Fix the missing service environment in the custom links
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248631
+- file:
+    name: 1768823331-fix-integration-card-in-manage-data-sources-always.yaml
+    checksum: ee7d1ac9927cf3051df2819973fed13f10ea0dd7
+  type: bug-fix
+  title: Fix Integration card in 'manage data sources' always shows 'no data stream' warning
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246180
+- file:
+    name: 1768823284-[data-table]-fix-links-color-contrast.yaml
+    checksum: 46947bba9287b7cd225d051b3756980aa2dc7e06
+  type: bug-fix
+  title: "[Data Table] Fix link's color contrast"
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247721
+- file:
+    name: 1768823276-encode-search-term-in-cases-page.yaml
+    checksum: f30ee27ba13efa3fba058bc294507849b632a071
+  type: bug-fix
+  title: Encode search term in cases page
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247992
+- file:
+    name: 1768823290-data-visualizer-fixes-display-of-map-view-for-smal.yaml
+    checksum: b7e4c140bb498ecc5f088f9e397b9d6d1f828408
+  type: bug-fix
+  title: 'Data Visualizer: fixes display of map view for small screen sizes'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247615
+- file:
+    name: 1768823253-fix-share-modal-time-range-issues.yaml
+    checksum: e8a2cb9ea70b9db5aab5168fb928bb8921792c16
+  type: bug-fix
+  title: Fix share modal time range issues
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248804
+- file:
+    name: 1768823327-replace-`host.hostname`-with-`host.name`-in-infras.yaml
+    checksum: eb53154a8bedbeae3664608102c6586abb7e58c2
+  type: bug-fix
+  title: Replace `host.hostname` with `host.name` in Infrastructure tab
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246386
+- file:
+    name: 1768823286-improve-anonymization-error-messages-when-ner-mode.yaml
+    checksum: 832c00d64b1abc518c4652e1a6eb8628dccc9bae
+  type: bug-fix
+  title: Improve anonymization error messages when NER model is not available
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247696
+- file:
+    name: 1768823332-fix-timeline-action-shown-in-alerts-table-bulk-act.yaml
+    checksum: bafb874796d9a875290d0e4dab462b6b5d5fcd3d
+  type: bug-fix
+  title: Fix timeline action shown in alerts table bulk actions without proper privilege
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246150
+- file:
+    name: 1768823257-cloned-managed-ilm-policies-shouldnt-be-marked-as-.yaml
+    checksum: b9dfe402a861b0d322c83501fa156176025916cb
+  type: bug-fix
+  title: Cloned managed ilm policies shouldn't be marked as managed
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248586
+- file:
+    name: 1768823277-fix-query-drafts-when-switching-tabs.yaml
+    checksum: 33b4af4799cbd8116f878ea2ea5cec09bc8866b8
+  type: bug-fix
+  title: Fix query drafts when switching tabs
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247968
+- file:
+    name: 1768823285-encode-url-components-for-entities.yaml
+    checksum: 1a7064d1e7d217887fc036b0cdde823103db286b
+  type: bug-fix
+  title: Encode URL Components for entities
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247707
+- file:
+    name: 1768823342-[analyzer]-ensure-we-render-analyzer-only-when-the.yaml
+    checksum: 06a6141762a067fa2e4db45f4c37dfd6272371e7
+  type: bug-fix
+  title: '[Analyzer] ensure we render analyzer only when the dataView is ready'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 245712
+- file:
+    name: 1768823335-[analyzer]-use-same-dataview-in-analyzer-preview-a.yaml
+    checksum: a88e0c0907f98c5987e62a2f56f83f4495e6c22b
+  type: bug-fix
+  title: '[Analyzer] use same dataview in analyzer preview as was selected in analyzer component'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246081
+- file:
+    name: 1768823261-fix-only-run-ml-saved-object-check-if-saving-seman.yaml
+    checksum: 7921981078531b669223f640f10b7f4fa93e8df6
+  type: bug-fix
+  title: 'Fix: Only run ML saved object check if saving semantic text mapping'
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 248462
+- file:
+    name: 1768823353-add-refusal-field-to-assistant-conversations.yaml
+    checksum: 7eb57423d2ec8d78c721929760bcdabcf4b51c30
+  type: bug-fix
+  title: Add refusal field to assistant conversations
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 243423
+- file:
+    name: 1768823350-intersect-allowed-and-authorized-types.yaml
+    checksum: b3d23add58a028357709d4331620bf3c867e3420
+  type: bug-fix
+  title: Intersect allowed and authorized types
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 244967
+- file:
+    name: 1768823334-only-update-relevant-monitors-where-maintenance-wi.yaml
+    checksum: dd89f48cc0cfcb3f951a50d3a0d716634ca1f5da
+  type: bug-fix
+  title: Only update relevant monitors where maintenance windows exists
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246088
+- file:
+    name: 1768823317-fix-mitre-coverage-overview-page-filter-display-bu.yaml
+    checksum: b0c8915bfd439ed903703f6ef67ae34420d48046
+  type: bug-fix
+  title: Fix MITRE coverage overview page filter display bug
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246794
+- file:
+    name: 1768823302-fix-compound-filters-showing-unsaved-changes-on-da.yaml
+    checksum: fa49ec6ec004abb7e706698010204217396f4874
+  type: bug-fix
+  title: Fix compound filters showing unsaved changes on dashboard load
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 247309
+- file:
+    name: 1768823316-fixing-anomaly-chart-empty-query-bug.yaml
+    checksum: c489f99738c4568b810ed5c8253ac7df5ba8fbc6
+  type: bug-fix
+  title: Fixing anomaly chart empty query bug
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246841
+- file:
+    name: 1768823319-updates-kibana-mitre-data-to-`v18.1`.yaml
+    checksum: 0680c3168ccc669dad35de505dd4159e8ee24fd0
+  type: enhancement
+  title: Updates kibana MITRE data to `v18.1`
+  products:
+  - product: kibana
+    target: 9.2.4
+    lifecycle: ga
+  pr: 246770

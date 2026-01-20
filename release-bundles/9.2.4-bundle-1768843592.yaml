@@ -1,0 +1,145 @@
+products:
+- product: kibana
+  target: 9.2.4
+entries:
+- file:
+    name: 1768843509-fix-console-state-persisting-across-journey-steps.yaml
+    checksum: f7ffe719e57dd776133dbe841af3db2e0bc90a12
+- file:
+    name: 1768843465-cloned-managed-ilm-policies-shouldnt-be-marked-as-.yaml
+    checksum: a8900c5b8a416e54cb59baed173385532d45beea
+- file:
+    name: 1768843476-fix-counter-fields-missing-in-anomaly-detection-dr.yaml
+    checksum: 0e206b596fc7fbb0c7a2be7d95013a4252e1e15e
+- file:
+    name: 1768843482-update-total-event-in-es-document-when-attaching-a.yaml
+    checksum: dc967c15b20eb32df3b2cf775f6d66c439fd0aa2
+- file:
+    name: 1768843568-add-refusal-field-to-assistant-conversations.yaml
+    checksum: 00759b261ba0ec080f525be488d9cf6b4c4b128e
+- file:
+    name: 1768843540-replace-`host.hostname`-with-`host.name`-in-infras.yaml
+    checksum: f6623ad83f84a629d7774bf06d80ebf1ccd1dc53
+- file:
+    name: 1768843511-use-exact-match-in-createdby-notes-filter.yaml
+    checksum: b528b5bdba67d4c894da55b6eece24865b34b1ec
+- file:
+    name: 1768843538-[endpoint]-add-server-configuration-setting-for-di.yaml
+    checksum: fdcd6fe996ac4421fbd05de8be3011409ab1fe11
+- file:
+    name: 1768843477-fix-timestamp-override-for-es|ql-csv-scheduled-rep.yaml
+    checksum: ec5f9d6ed065bdb276b867f8264113e3db713bac
+- file:
+    name: 1768843495-encode-url-components-for-entities.yaml
+    checksum: 9cc536d92c6f0f3292825bb155bd83f8280f2a71
+- file:
+    name: 1768843560-fix-alert-flyout-threat-intelligence-section-not-s.yaml
+    checksum: 9890fb6860a394feb44f1bd7156a548e3a807223
+- file:
+    name: 1768843563-persist-analyzer-dataview-in-local-storage.yaml
+    checksum: 4ddc4bbc8c35364bc203a884fb66d50a40ecdca4
+- file:
+    name: 1768843489-fix-validation-of-maintenance-windows-in-project-m.yaml
+    checksum: af34b37ff07812ec0b866aa04173ba1a60de9ad0
+- file:
+    name: 1768843485-fix-query-drafts-when-switching-tabs.yaml
+    checksum: c48f36863aa48137c50f90ced83cd6782fff7c42
+- file:
+    name: 1768843497-disable-es|ql-field-stats-for-ts-command.yaml
+    checksum: 114f6d1f1081fe6cd73e174ca51309bc2dc0ac41
+- file:
+    name: 1768843481-fix-api-doesnt-use-an-associated-conversations-sys.yaml
+    checksum: ad9438b1a90421a04034d878ae3cfd151675fd46
+- file:
+    name: 1768843488-fix-product-documentation-not-available-callout-ic.yaml
+    checksum: cc2d287684a5c1fd1ffeb0fdff85c2fffc3d9282
+- file:
+    name: 1768843545-fix-timeline-action-shown-in-alerts-table-bulk-act.yaml
+    checksum: 02cb524cc268ce114d40f0511fa7c9297f355cff
+- file:
+    name: 1768843500-[notes]-disable-delete-for-read-only-users-and-imp.yaml
+    checksum: 4053538045a88ba4cc6ae7e03af63215438c4194
+- file:
+    name: 1768843467-fix-search-entire-time-range-for-date-nanos.yaml
+    checksum: 56409b9c471e250d6278bde4322dbe9a6f5543aa
+- file:
+    name: 1768843503-fix-related-dashboards-for-es-query-and-other-stac.yaml
+    checksum: 40d5b0ef5d48bb487a7bfc9f37bb19c9f3825118
+- file:
+    name: 1768843557-[analyzer]-ensure-we-render-analyzer-only-when-the.yaml
+    checksum: e8b4bb09f0e6c0a1ca8148ba1de590fe8753d6a4
+- file:
+    name: 1768843544-fix-integration-card-in-manage-data-sources-always.yaml
+    checksum: 1461fa9ff6a29f315332062f14887da68b1a79e4
+- file:
+    name: 1768843468-fix-only-run-ml-saved-object-check-if-saving-seman.yaml
+    checksum: 63bb409e9187b7a5eb7389a2d9f0518d37306e3b
+- file:
+    name: 1768843528-fixing-anomaly-chart-empty-query-bug.yaml
+    checksum: 46b6b189b845717ed48097789ef97c139bac21d8
+- file:
+    name: 1768843537-add-max-character-validation-to-the-email-connecto.yaml
+    checksum: 15db401eeede5527962e1708897fa9e866a14dde
+- file:
+    name: 1768843532-updates-kibana-mitre-data-to-`v18.1`.yaml
+    checksum: 1e836ff918b94a6952a0386b6530d3320d19e48a
+- file:
+    name: 1768843504-[discover]-fix-trace-links-calculating-date-range-.yaml
+    checksum: d99f370dc065fa2f1337e4eccdc482a4fcacf848
+- file:
+    name: 1768843496-improve-anonymization-error-messages-when-ner-mode.yaml
+    checksum: a307c78ba6105776b0b781d79a056ad3465e20d2
+- file:
+    name: 1768843515-use-unicode-escaping-to-prevent-agent-from-interpr.yaml
+    checksum: e6568b004d1d8e24207a1635fbd5ff3a8369150d
+- file:
+    name: 1768843483-encode-search-term-in-cases-page.yaml
+    checksum: e14f3726c9db02da0630fdafc15d500dc88d08ae
+- file:
+    name: 1768843460-fix-share-modal-time-range-issues.yaml
+    checksum: 8fac42d9d016af3cd9ddb1162b2f2ec491afb14f
+- file:
+    name: 1768843501-data-visualizer-fixes-display-of-map-view-for-smal.yaml
+    checksum: 9747c13a3ac8de91227f437784b7196cb4b3f031
+- file:
+    name: 1768843493-[data-table]-fix-links-color-contrast.yaml
+    checksum: 5282048935dd6bceb0acfb287cc37c351a7cfa7d
+- file:
+    name: 1768843533-fix-default-app-state-handling-when-detecting-unsa.yaml
+    checksum: fea9f8d5e5f1951324af5dfcdd74fd1ef895eea8
+- file:
+    name: 1768843556-edit-default-alerts-flow-breaks-if-default-rules-a.yaml
+    checksum: 8591cb86f41423db2ba4f2e307c2cbf58f75e7d2
+- file:
+    name: 1768843548-only-update-relevant-monitors-where-maintenance-wi.yaml
+    checksum: 203d1555252d3c2ef5bec79095d9200569844f55
+- file:
+    name: 1768843552-fix-case-sensitivity-of-fields-in-role-page.yaml
+    checksum: d54fb7683c0c0b76ebe70fdedb471bf84922cb22
+- file:
+    name: 1768843571-improved-error-handling-for-tool-response.yaml
+    checksum: 1a95c879c49733e457446d14ceda12f92cc3e7d8
+- file:
+    name: 1768843530-fix-mitre-coverage-overview-page-filter-display-bu.yaml
+    checksum: 550114ab4271f49faf9b53ecefbf77fd5837cc78
+- file:
+    name: 1768843486-change-alert-suppression-icon.yaml
+    checksum: 7c937e75b253a893df7b7740184c64a5701e3ccb
+- file:
+    name: 1768843519-fix-createauditevents-always-returning-failure-as-.yaml
+    checksum: 1a63dfba82600c5501faeeeaa59a9f141561ffd1
+- file:
+    name: 1768843463-fix-the-missing-service-environment-in-the-custom-.yaml
+    checksum: ef89c44ad43e7faf80e92513b56b1775e9d089ad
+- file:
+    name: 1768843549-[analyzer]-use-same-dataview-in-analyzer-preview-a.yaml
+    checksum: ca0b363b4c431914a72697155741643370a7d17c
+- file:
+    name: 1768843512-fix-compound-filters-showing-unsaved-changes-on-da.yaml
+    checksum: 1e0b067e7c8fb3cca60ca7890cc1dd02c40bac18
+- file:
+    name: 1768843521-[entity-analytics][risk-scoring]-handle-special-ch.yaml
+    checksum: 7cd5615ba6423cd8054645a8cda5d734d7514d83
+- file:
+    name: 1768843565-intersect-allowed-and-authorized-types.yaml
+    checksum: 21f2c2bbdf1b2198194601266d409dff103e75e0

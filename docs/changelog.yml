@@ -1,0 +1,317 @@
+# Changelog Configuration
+# This file configures the valid values for changelog fields.
+# Place this file as `changelog.yml` in the `docs/` directory
+
+# Available types for changelog entries
+available_types:
+  - breaking-change
+  - bug-fix
+  - deprecation
+  - docs
+  - enhancement
+  - feature
+  - known-issue
+  - other
+  - regression
+  - security
+
+# Available subtypes for breaking changes
+available_subtypes:
+  - api
+  - behavioral
+  - configuration
+  - dependency
+  - subscription
+  - plugin
+  - security
+  - other
+
+# Available lifecycle values
+available_lifecycles:
+  - preview
+  - beta
+  - ga
+
+# Available areas (optional - if not specified, all areas are allowed)
+available_areas:
+  # - Autoscaling
+  # - Search
+  # - Security
+  # - Watcher
+  # Add more areas as needed
+
+# Available products (optional - if not specified, all products are allowed)
+available_products:
+  # - elasticsearch
+  - kibana
+  # - apm
+  # - beats
+  # - elastic-agent
+  # - fleet
+  # - cloud-hosted
+  # - cloud-serverless
+  # - cloud-enterprise
+  # Add more products as needed
+
+# GitHub label mappings (optional - used when --pr option is specified)
+# Maps GitHub PR labels to changelog type values
+# When a PR has a label that matches a key, the corresponding type value is used
+label_to_type:
+  # Example mappings - customize based on your label naming conventions
+  "release_note:breaking": breaking-change
+  "release_note:fix": bug-fix
+  # ">docs": docs
+  "release_note:enhancement": enhancement
+  "release_note:feature": feature
+  "release_note:deprecation": deprecation
+
+# Maps GitHub PR labels to changelog area values
+# Multiple labels can map to the same area, and a single label can map to multiple areas (comma-separated)
+label_to_areas:
+  # Theme
+  "EUI": Theme
+
+  # Logstash
+  "Feature:Logstash Pipelines": Logstash
+
+  # Monitoring
+  "Team:Monitoring": Monitoring
+  "Feature:Telemetry": Monitoring
+  "Feature:Stack Monitoring": Monitoring
+
+  # Kibana UI
+  "Kibana UI": Kibana UI
+  "Team:Core UI": Kibana UI
+  "Feature:Header": Kibana UI
+
+  # Machine Learning
+  ":ml": Machine Learning
+  "Feature:Anomaly Detection": Machine Learning
+  "Feature:Data Frames": Machine Learning
+  "Feature:File Data Viz": Machine Learning
+  "Feature:ml-results": Machine Learning
+  "Feature:Data Frame Analytics": Machine Learning
+  "Feature:Inference UI": Machine Learning
+
+  # Maps
+  "Team:Geo": Maps
+
+  # QA
+  "Team:QA": QA
+
+  # Kibana security
+  "Team:Security": Kibana security
+  "Feature:Security/Spaces": Kibana security
+  "Feature:users and roles": Kibana security
+  "Feature:Security/Authentication": Kibana security
+  "Feature:Security/Authorization": Kibana security
+  "Feature:Security/Feature Controls": Kibana security
+  "Team:Security-Scalability": "Kibana security, Elastic Security solution"
+
+  # Canvas
+  "Feature:Canvas": Canvas
+
+  # Connectivity
+  "Feature:Actions/ConnectorTypes": Connectivity
+
+  # Dashboards and Visualizations
+  "Feature:Dashboard": Dashboards and Visualizations
+  "Feature:Drilldowns": Dashboards and Visualizations
+  "Project:TimeToVisualize": Dashboards and Visualizations
+  "Team:Presentation": Dashboards and Visualizations
+  "Feature:Lens": Dashboards and Visualizations
+  "Feature:Timelion": Dashboards and Visualizations
+  "Feature:TSVB": Dashboards and Visualizations
+  "Feature:Coordinate Map": Dashboards and Visualizations
+  "Feature:Region Map": Dashboards and Visualizations
+  "Feature:Vega": Dashboards and Visualizations
+  "Feature:Gauge Vis": Dashboards and Visualizations
+  "Feature:Tagcloud": Dashboards and Visualizations
+  "Feature:Vis Loader": Dashboards and Visualizations
+  "Feature:Vislib": Dashboards and Visualizations
+  "Feature:Vis Editor": Dashboards and Visualizations
+  "Feature:Aggregations": Dashboards and Visualizations
+  "Feature:Input Control": Dashboards and Visualizations
+  "Feature:Visualizations": Dashboards and Visualizations
+  "Feature:Markdown": Dashboards and Visualizations
+  "Feature:Data Table": Dashboards and Visualizations
+  "Feature:Heatmap": Dashboards and Visualizations
+  "Feature:Pie Chart": Dashboards and Visualizations
+  "Feature:XYAxis": Dashboards and Visualizations
+  "Feature:Graph": Dashboards and Visualizations
+  "Feature:New Feature": Dashboards and Visualizations
+  "Feature:MetricVis": Dashboards and Visualizations
+  "Team:Visualizations": Dashboards and Visualizations
+
+  # Discover
+  "Feature:Discover": Discover
+  "Team:DataDiscovery": Discover
+  "Team:ESQL": "Discover, ES|QL"
+
+  # Querying & Filtering
+  "Feature:Query Bar": Querying & Filtering
+  "Feature:Courier": Querying & Filtering
+  "Feature:Filters": Querying & Filtering
+  "Feature:Timepicker": Querying & Filtering
+  "Feature:Highlight": Querying & Filtering
+  "Feature:KQL": Querying & Filtering
+  "Feature:Rollups": Querying & Filtering
+
+  # Reporting
+  "Feature:Reporting": Reporting
+  "Team:Reporting Services": Reporting
+
+  # Sharing
+  "Feature:Embedding": Sharing
+  "Feature:SharingURLs": Sharing
+
+  # Elastic Security solution
+  "Team:SIEM": Elastic Security solution
+  "Team:SecuritySolution": Elastic Security solution
+  "Team: SecuritySolution": Elastic Security solution
+  "Team:Endpoint Response": Elastic Security solution
+  "Team:Entity Analytics": Elastic Security solution
+  "Team:Security Generative AI": Elastic Security solution
+  "Team:Threat Hunting": Elastic Security solution
+  "Team:Threat Hunting:Explore": Elastic Security solution
+  "Team:Threat Hunting:Investigations": Elastic Security solution
+  "Team:Detections and Resp": Elastic Security solution
+  "Team:Asset Management": Elastic Security solution
+  "Team:Onboarding and Lifecycle Mgt": Elastic Security solution
+  "Team:Security Solution Platform": Elastic Security solution
+  "Team:Detection Alerts": Elastic Security solution
+  "Team: CTI": Elastic Security solution
+  "Team:CTI": Elastic Security solution
+  "Team:Threat Hunting:Cases": Elastic Security solution
+  "Team:Cloud Security": Elastic Security solution
+  "Team:Detection Engine": Elastic Security solution
+  "Team:Defend Workflows": Elastic Security solution
+  "Team:Detection Rules": Elastic Security solution
+  "Feature:Timeline": Elastic Security solution
+  "Feature:Detection Rules": Elastic Security solution
+  "Feature:Detection Alerts": Elastic Security solution
+  "Feature:Entity Analytics": Elastic Security solution
+  "Feature:Rule Exceptions": Elastic Security solution
+  "Feature:AutomaticImport": Elastic Security solution
+  "Feature:SIEMMigrations": Elastic Security solution
+
+  # Code
+  "Team:Code": Code
+
+  # Elastic Observability solution
+  "Feature:Observability Home": Elastic Observability solution
+  "Feature:SLO": Elastic Observability solution
+  "Team:obs-ux-management": Elastic Observability solution
+  "Team:Obs AI Assistant": Elastic Observability solution
+  "Team:obs-ux-infra_services - DEPRECATED": Elastic Observability solution
+  "Team:obs-onboarding": Elastic Observability solution
+  "Team:obs-knowledge": Elastic Observability solution
+  "Team:obs-entities": Elastic Observability solution
+  "ci:project-deploy-observability": Elastic Observability solution
+  "Feature:Uptime": Elastic Observability solution
+  "Team:uptime": Elastic Observability solution
+  "Team:apm": Elastic Observability solution
+  "Team:APM": Elastic Observability solution
+  "Feature:Metrics UI": Elastic Observability solution
+  "Team:logs-metrics-ui": Elastic Observability solution
+  "Feature:Logs UI": Elastic Observability solution
+  "Feature:Infra UI": Elastic Observability solution
+  "Feature:Service Maps": Elastic Observability solution
+  "Team:actionable-obs": Elastic Observability solution
+  "Team:obs-exploration": Elastic Observability solution
+  "Team:obs-presentation": Elastic Observability solution
+  "Team:obs-ai": Elastic Observability solution
+  "Team:Observability": Elastic Observability solution
+  "author:actionable-obs": Elastic Observability solution
+
+  # Beats Management
+  "Feature:beats-cm": Beats Management
+  "Team:Beats": Beats Management
+
+  # Alerting
+  "Feature:Alerting": Alerting
+  "Team:Alerting Services": Alerting
+  "Feature:Actions": Alerting
+  "Team:ResponseOps": Alerting
+  "Team:Cases": Alerting
+
+  # Data ingestion and Fleet
+  "Team:Fleet": Data ingestion and Fleet
+  "Ingest": Data ingestion and Fleet
+  "Feature:Ingest Node Pipelines": Data ingestion and Fleet
+
+  # Kibana platform
+  "Feature:license": Kibana platform
+  "Feature:Console": Kibana platform
+  "Feature:Search Profiler": Kibana platform
+  "Feature:watcher": Kibana platform
+  "Feature:Index Patterns": Kibana platform
+  "Feature:Data Views": Kibana platform
+  "Feature:Kibana Management": Kibana platform
+  "Feature:Dev Tools": Kibana platform
+  "Feature:Inspector": Kibana platform
+  "Feature:Index Management": Kibana platform
+  "Feature:Streams": Kibana platform
+  "Feature:Snapshot and Restore": Kibana platform
+  "Team:Elasticsearch UI": Kibana platform
+  "Team:Stack Management": Kibana platform
+  "Feature:FieldFormatters": Kibana platform
+  "Feature:CCR": Kibana platform
+  "Feature:ILM": Kibana platform
+  "Feature:Transforms": Kibana platform
+  "Feature:Search": "Kibana platform, Querying & Filtering"
+  "Project:AsyncSearch": "Kibana platform, Querying & Filtering"
+  "Feature:Upgrade Assistant": Kibana platform
+  "Team:Operations": Kibana platform
+  "Feature:License": Kibana platform
+  "Team:Core": Kibana platform
+  "Feature:Plugins": Kibana platform
+  "Feature:New Platform": Kibana platform
+  "Project:i18n": Kibana platform
+  "Feature:ExpressionLanguage": Kibana platform
+  "Feature:Saved Objects": Kibana platform
+  "Team:Stack Services": Kibana platform
+  "Feature:NP Migration": Kibana platform
+  "Feature:Task Manager": Kibana platform
+  "Team:Pulse": Kibana platform
+  "Team:SharedUX": Kibana platform
+  "Team:Design": Kibana platform
+  "Project:Accessibility": Kibana platform
+  "Feature:Add Data": Kibana platform
+  "Feature:Home": Kibana platform
+  "Team:Cloud": Kibana platform
+
+  # Search
+  "Team:Search": Search
+
+# Render blockers (optional - used by the "docs-builder changelog render" command)
+# Changelogs matching the specified products and areas/types will be commented out in rendered output files
+# Dictionary key can be a single product ID or comma-separated product IDs (e.g., "elasticsearch, cloud-serverless")
+# Dictionary value contains areas and/or types that should be blocked for those products
+render_blockers:
+  # Multiple products (comma-separated) with areas and types that should be blocked
+  "cloud-hosted, cloud-serverless":
+    areas: # List of area values that should be blocked (commented out) during render
+      - Autoscaling
+      - Watcher
+    types: # List of type values that should be blocked (commented out) during render
+      - docs
+  # Single product with areas that should be blocked
+  elasticsearch:
+    areas:
+      - Security
+
+# Product-specific label blockers (optional)
+# Maps product IDs to lists of pull request labels that prevent changelog creation for that product
+# If you run the changelog add command with the --prs option and a PR has any of these labels, the changelog is not created
+# Product IDs can be comma-separated to share the same list of labels across multiple products
+add_blockers:
+  # Example: Skip changelog creation for elasticsearch product when PR has these labels
+  kibana:
+    - "release_note:skip"
+  #   - ">test"
+  #   - ">refactoring"
+  # Example: Share the same blockers across multiple products using comma-separated product IDs
+  # elasticsearch, cloud-serverless:
+  #   - ">non-issue"
+
